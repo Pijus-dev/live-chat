@@ -1,0 +1,130 @@
+.joinWrapper {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  border-radius: 15px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
+  .availableRooms {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(73, 27, 73);
+    border-radius: 15px 0 0 15px;
+    overflow-y: scroll;
+
+    @media screen and (max-width: 480px) {
+      width: 90%;
+      height: 170px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      letter-spacing: 1.4px;
+      font-weight: bold;
+    }
+    .room {
+      width: 80%;
+      margin: 10px auto;
+      border-radius: 5px;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(142, 70, 156);
+
+      box-shadow: 0;
+
+      &:hover {
+        box-shadow: 0 0 6px #fcb48a;
+      }
+
+      i {
+        color: white;
+      }
+
+      p {
+        margin: 0;
+        color: white;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+  .join {
+    width: 70%;
+    background-color: #fcaf45;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      width: 90%;
+      border-radius: 0 0 15px 15px;
+      align-items: unset;
+      height: 300px;
+    }
+
+    .joinRoom {
+      width: 50%;
+
+      @media screen and (max-width: 480px) {
+        width: 70%;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .inputGroup {
+        input {
+          width: 100%;
+          border: 1px solid #dfe1e5;
+          padding-left: 5px;
+          box-shadow: none;
+          border-radius: 16px;
+          height: 40px;
+          letter-spacing: 1.6px;
+          font-size: 0.8rem;
+          color: rgb(207, 204, 204);
+          transition: box-shadow 0.3s;
+          margin-bottom: 20px;
+          font-weight: lighter;
+          box-shadow: 0;
+          background-color: #eee;
+
+          &:hover {
+            box-shadow: 0 0 30px rgba(3, 2, 2, 0.2);
+          }
+          &:focus {
+            outline: none;
+          }
+          @media screen and (max-width: 480px) {
+            height: 35px;
+            font-size: 0.75rem;
+          }
+        }
+      }
+      button {
+        width: 30%;
+        float: right;
+        border-radius: 8px;
+        background-color: #f3512c;
+        color: white;
+        border: none;
+        padding: 10px 0;
+        cursor: pointer;
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}

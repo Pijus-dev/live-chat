@@ -1,0 +1,148 @@
+.chatWrapper {
+  width: 50%;
+  height: 500px;
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
+  .chatUsers {
+    border-radius: 15px 0 0 15px;
+    height: 100%;
+    background-color: rgb(221, 211, 211);
+    width: 30%;
+    overflow-y: scroll;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      height: 170px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .activeUsers {
+      height: 60px;
+      background-color: #8b2974;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      i {
+        color: white;
+      }
+
+      h3 {
+        margin: 0 0 0 10px;
+        color: white;
+      }
+    }
+
+    .users {
+      max-width: 85%;
+      border-radius: 10px;
+      background-color: white;
+      margin: 15px auto 0 auto;
+      padding: 6px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0;
+
+      &:hover {
+        box-shadow: 0 0 7px rgb(148, 142, 142);
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        letter-spacing: 1.3px;
+        color: #00b2ff;
+      }
+
+      span {
+        width: 8px;
+        height: 8px;
+        background-color: rgb(75, 199, 75);
+        border-radius: 30px;
+      }
+    }
+  }
+  .activeChat {
+    border-radius: 0 15px 15px 0;
+    width: 70%;
+    position: relative;
+    height: 100%;
+    background-color: white;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+      align-items: unset;
+      height: 300px;
+    }
+
+    .chatContent {
+      height: 360px;
+      padding: 8px 0;
+      overflow-y: scroll;
+
+      @media screen and (max-width: 480px) {
+        height: 180px;
+      }
+    }
+  }
+  .chatInfo {
+    border-radius: 0 15px 0 0;
+    height: 60px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      border-radius: unset;
+    }
+
+    a {
+      text-decoration: none;
+
+      span {
+        margin-right: 10px;
+        color: rgb(241, 79, 79);
+        cursor: pointer;
+      }
+    }
+
+    h3 {
+      margin: 0 0 0 10px;
+      color: rgb(148, 148, 247);
+      font-weight: bold;
+    }
+  }
+  .sendInput {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    input {
+      width: 94%;
+      height: 45px;
+      border: none;
+      border-top: 1px solid #dfe1e5;
+      border-radius: 0 0 15px 0;
+      padding: 10px;
+      position: relative;
+      letter-spacing: 1.4px;
+      color: rgb(172, 162, 162);
+      font-size: 0.85rem;
+
+      &:focus {
+        outline: none;
+      }
+      @media screen and (max-width: 480px) {
+        height: 25px;
+      }
+    }
+  }
+}

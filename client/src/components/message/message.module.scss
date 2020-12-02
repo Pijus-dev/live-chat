@@ -1,0 +1,50 @@
+.messageContainer {
+  display: flex;
+  padding: 0 5%;
+  margin-top: 3px;
+
+  .messageText {
+    background-color: #FFDC80;
+    border-radius: 20px;
+    max-width: 80%;
+    padding: 0 20px;
+
+    p {
+      font-size: 0.8rem;
+      letter-spacing: 1.3px;
+    }
+  }
+  .user {
+    margin-left: 8px;
+
+    p {
+      color: rgb(202, 193, 193);
+      font-size: 0.85rem;
+    }
+  }
+  .user1 {
+    margin-right: 8px;
+
+    p {
+      color: rgb(202, 193, 193);
+      font-size: 0.85rem;
+    }
+  }
+  .text1 {
+    background-color: rgb(96, 187, 248);
+    border-radius: 20px;
+    max-width: 80%;
+    padding: 5px 20px;
+
+    p {
+      font-size: 0.8rem;
+      letter-spacing: 1.3px;
+    }
+  }
+}
+.justifyStart {
+  justify-content: flex-start;
+}
+.justifyEnd {
+  justify-content: flex-end;
+}

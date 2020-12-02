@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(
+    to right top,
+    #f56040,
+    #f2524f,
+    #ec455d,
+    #e23c6a,
+    #d63676,
+    #cd327f,
+    #c33188,
+    #b73290,
+    #ae3299,
+    #a233a2,
+    #9436ab,
+    #833ab4
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
